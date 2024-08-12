@@ -5,15 +5,15 @@ import Box from "./component/Box"
 const choice ={
   rock:{
     name:"Rock",
-    img:"https://data.ac-illust.com/data/thumbnails/e9/e92a1571a8be257a99cfdc87af423ff3_w.jpeg"
+    img:"https://github.com/escookie/rock/blob/master/img/rock.jpg"
   },
   scissors:{
     name:"Scissors",
-    img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZmdqhES9AEhEouS4qL5-hi0HMeHCTA3a6LA&s"
+    img:"https://github.com/escookie/rock/blob/master/img/scissors.png"
   },
   paper:{
     name:"Paper",
-    img:"https://blog.kakaocdn.net/dn/bmjB2s/btqXHhp6kpG/TH14W4U612SxKo9uuR2sB0/img.png"
+    img:"https://github.com/escookie/rock/blob/master/img/paper.png"
   }
 }
 
