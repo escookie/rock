@@ -13,13 +13,13 @@ const Box = (props) => {
   }
 
   return (
-    <div className={`box ${result} box-mobile-ver`}>
-      <div className=''>
+    <div className={`box ${result}`}>
+      <div className='box-in-1'>
         <h1>{props.title}</h1>      
         <h2>{props.item && props.item.name}</h2>
       </div>
-      <div className='vertical-align'>
-      <img
+      <div className='box-in-2'>
+        <img
         className='item-img img-size'
         src={props.item && props.item.img ? props.item.img : "https://raw.githubusercontent.com/escookie/rock/main/img/rsp.png"}
         alt={props.item ? props.item.name : "No image available"}

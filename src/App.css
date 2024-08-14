@@ -1,6 +1,6 @@
 
 .box{
-    border: 1px solid black;
+    border: 10px solid rgb(174, 174, 174);
     width: 320px;
     margin: 10px;
 }
@@ -10,8 +10,15 @@
     justify-content: center;
     text-align: center;
 }
-.mobile-display{
-    display: none;
+
+.mobile-display{display: none;}
+
+@media all and (max-width:600px) {
+    .main{display: block;}
+    .box-in-1 > h1{font-size: clamp(1.3rem, 1.5vw, 1.5rem);}
+    .box-in-2 {width: 50%; padding-left: 25%;}
+    /* .box {grid-template-columns: 20% 60% 20%; display: grid;} */
+    .desktop-display{display: none;} 
 }
 
 .img-size{

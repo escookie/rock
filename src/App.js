@@ -19,8 +19,14 @@ const choice ={
 
 function App() {
   
-  const [userSelect, setUserSelect] = useState(null)
-  const [computerSelect,setComputerSelect] = useState(null)
+  const [userSelect, setUserSelect] = useState({
+    name: "게임을",
+    img: "https://www.menupan.com/Event/2013/01_rps/img/rps_all.gif" // 기본 이미지
+  })
+  const [computerSelect,setComputerSelect] = useState({
+    name: "시작합니다!",
+    img: "https://www.menupan.com/Event/2013/01_rps/img/rps_all.gif" // 기본 이미지
+  })
   const [result,setResult] = useState("")
 
   const play=(userChoice)=>{
@@ -49,15 +55,15 @@ function App() {
   }
 
   return (
-    <div className='make-center'>      
+    <div>      
       <div className='main'>
         <Box title="You" item={userSelect} result={result}/>
         <div className='main mobile-display'>
           <button onClick={()=>play("scissors")}>가위</button>
-          <button onClick={()=>play("rock")}>바위</button>
+          <button button onClick={()=>play("rock")}>바위</button>
           <button onClick={()=>play("paper")}>보</button>
-        </div>        
-        <Box title="Computer" item={computerSelect} result={result}/>
+        </div>
+        <Box title="Computer" item={computerSelect} result={result}/>        
       </div>
       <div className='main desktop-display'>
         <button onClick={()=>play("scissors")}>가위</button>
