@@ -13,11 +13,19 @@ const Box = (props) => {
   }
 
   return (
-    <div className={`box ${result}`}>
-      <h1>{props.title}</h1>
-      <h2>{props.item && props.item.name}</h2>
-      <img className='item-img img-size' src={ props.item && props.item.img} alt="item" />
-      <h2>{result}</h2>
+    <div className={`box ${result} box-mobile-ver`}>
+      <div className=''>
+        <h1>{props.title}</h1>      
+        <h2>{props.item && props.item.name}</h2>
+      </div>
+      <div className='vertical-align'>
+      <img
+        className='item-img img-size'
+        src={props.item && props.item.img ? props.item.img : "https://images.velog.io/images/jiwon22/post/81e18d1a-a0c8-4c6d-9f65-6ea4552c6d62/Rock-Paper-Scissors.png"}
+        alt={props.item ? props.item.name : "No image available"}
+        />
+      </div>
+      <div><h2>{result}</h2></div>
     </div>
   );
 };

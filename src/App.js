@@ -5,7 +5,7 @@ import Box from "./component/Box"
 const choice ={
   rock:{
     name:"Rock",
-    img:"https://data.ac-illust.com/data/thumbnails/e9/e92a1571a8be257a99cfdc87af423ff3_w.jpeg"
+    img:"https://raw.githubusercontent.com/escookie/rock/main/img/rock.jpg"
   },
   scissors:{
     name:"Scissors",
@@ -49,12 +49,17 @@ function App() {
   }
 
   return (
-    <div>      
+    <div className='make-center'>      
       <div className='main'>
         <Box title="You" item={userSelect} result={result}/>
+        <div className='main mobile-display'>
+          <button onClick={()=>play("scissors")}>가위</button>
+          <button onClick={()=>play("rock")}>바위</button>
+          <button onClick={()=>play("paper")}>보</button>
+        </div>        
         <Box title="Computer" item={computerSelect} result={result}/>
       </div>
-      <div className='main'>
+      <div className='main desktop-display'>
         <button onClick={()=>play("scissors")}>가위</button>
         <button onClick={()=>play("rock")}>바위</button>
         <button onClick={()=>play("paper")}>보</button>
