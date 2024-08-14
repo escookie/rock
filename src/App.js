@@ -9,11 +9,11 @@ const choice ={
   },
   scissors:{
     name:"Scissors",
-    img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZmdqhES9AEhEouS4qL5-hi0HMeHCTA3a6LA&s"
+    img:"https://raw.githubusercontent.com/escookie/rock/main/img/scissors.png"
   },
   paper:{
     name:"Paper",
-    img:"https://blog.kakaocdn.net/dn/bmjB2s/btqXHhp6kpG/TH14W4U612SxKo9uuR2sB0/img.png"
+    img:"https://raw.githubusercontent.com/escookie/rock/main/img/paper.png"
   }
 }
 

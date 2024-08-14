@@ -21,7 +21,7 @@ const Box = (props) => {
       <div className='vertical-align'>
       <img
         className='item-img img-size'
-        src={props.item && props.item.img ? props.item.img : "https://images.velog.io/images/jiwon22/post/81e18d1a-a0c8-4c6d-9f65-6ea4552c6d62/Rock-Paper-Scissors.png"}
+        src={props.item && props.item.img ? props.item.img : "https://raw.githubusercontent.com/escookie/rock/main/img/rsp.png"}
         alt={props.item ? props.item.name : "No image available"}
         />
       </div>
